@@ -28,14 +28,6 @@
 
 @implementation ViewController
 
-
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-    self.label = [[ZCAnimatedLabel alloc] initWithFrame:CGRectMake(15, CGRectGetMaxY(self.debugRedraw.frame) + 15, self.view.frame.size.width - 30, CGRectGetHeight(self.view.frame) - CGRectGetMaxY(self.debugRedraw.frame))];
-    [self.view addSubview:self.label];
-}
-
 - (IBAction) changeEffect: (id) sender
 {
     UIActionSheet *sheet = [[UIActionSheet alloc] initWithTitle:nil delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:nil otherButtonTitles:@"Throw", @"Shapeshift", @"Default", @"Duang", @"Fall", @"Alpha", @"Flyin", @"Blur", @"Reveal", @"Spin", @"Dash", nil];
