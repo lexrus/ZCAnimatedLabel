@@ -27,6 +27,7 @@
 		16AE47BF1AB13FF8001C1C72 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16AE47B81AB13FF8001C1C72 /* ViewController.m */; };
 		16AE47C51AB83097001C1C72 /* ZCSpinLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 16AE47C41AB83097001C1C72 /* ZCSpinLabel.m */; };
 		16DA893E1AB13BAD00A31A47 /* ZCShapeshiftLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 16DA893D1AB13BAD00A31A47 /* ZCShapeshiftLabel.m */; };
+		E49DA3222611B1350011C87D /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49DA3212611B1350011C87D /* Package.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +75,7 @@
 		84F34C6ABAEB8DB5DA00A772 /* libPods-ZCAnimatedLabel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZCAnimatedLabel.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABFDD8BC23EA1E23896DBE2C /* libPods-ZCMorphingLabel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZCMorphingLabel.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C72A3A3217822EF8CDF3E13A /* Pods-ZCMorphingLabel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZCMorphingLabel.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZCMorphingLabel/Pods-ZCMorphingLabel.debug.xcconfig"; sourceTree = "<group>"; };
+		E49DA3212611B1350011C87D /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +131,7 @@
 		16A16C471A8DCC2500F6FC41 = {
 			isa = PBXGroup;
 			children = (
+				E49DA3212611B1350011C87D /* Package.swift */,
 				16A16C521A8DCC2500F6FC41 /* ZCAnimatedLabel */,
 				16AE47AD1AB13FF8001C1C72 /* AppDelegate.h */,
 				16AE47AE1AB13FF8001C1C72 /* AppDelegate.m */,
@@ -242,6 +245,7 @@
 				TargetAttributes = {
 					16A16C4F1A8DCC2500F6FC41 = {
 						CreatedOnToolsVersion = 6.1.1;
+						LastSwiftMigration = 1230;
 						ProvisioningStyle = Manual;
 					};
 				};
@@ -293,6 +297,7 @@
 				16668B0A1AB049FA0047B706 /* ZCTransparencyLabel.m in Sources */,
 				16668B021AB049FA0047B706 /* ZCFallLabel.m in Sources */,
 				16AE47B91AB13FF8001C1C72 /* AppDelegate.m in Sources */,
+				E49DA3222611B1350011C87D /* Package.swift in Sources */,
 				16668B011AB049FA0047B706 /* ZCEasingUtil.m in Sources */,
 				16AE47BF1AB13FF8001C1C72 /* ViewController.m in Sources */,
 				16668B031AB049FA0047B706 /* ZCFlyinLabel.m in Sources */,
@@ -384,6 +389,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ZCAnimatedLabel/Info.plist;
@@ -391,6 +397,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "overboming.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
